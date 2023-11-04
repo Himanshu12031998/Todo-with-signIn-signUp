@@ -1,0 +1,12 @@
+.header-profile{
+    color:white;
+}
+.header-profile-container{
+    border: 1px solid grey;
+    padding:3px 15px;
+    border-radius: 25px;
+}
+.user-icon{
+    margin-right: 3px;
+    margin-top: -3px;
+}

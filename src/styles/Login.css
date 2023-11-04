@@ -1,0 +1,78 @@
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .clear-icon,
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .clear-icon {
+    right: 10px;
+  }
+  
+  .eye-icon {
+    right: 35px;
+  }
+  
+  .clear-icon:hover,
+  .eye-icon:hover {
+    color: #333;
+  }
+  .login-btn{
+    margin-top: 10px;
+    width: 100%;
+  }
+  @media (max-width: 576px) {
+    .login-container {
+      padding: 10px;
+    }
+  }
+
+  .cng-pwd-container{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    margin-top: 40px;
+    margin-left: 40%;
+    font-family: Roboto,sans-serif;
+    box-shadow: 1px 2px 3px black;
+}
+.cng-pwd-container input{
+    padding: 10px 8px;
+    width:240px;
+    font-family: Robot,sans-serif;
+    font-size: 16px;
+    border:0px;
+    outline: none;
+    border-bottom:1px solid green;
+}
+.cng-pwd-container button{
+    padding: 5px 40px;
+    font-family: Robot,sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.098em;
+    border-radius: 7px;
+    border:1px solid green;
+    background-color:rgb(41, 41, 255);
+    color:white;
+    cursor: pointer;
+    margin-top: 5px;
+}

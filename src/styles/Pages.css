@@ -1,0 +1,69 @@
+.main {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  
+  /* Login-page */
+  .login-container {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    box-shadow: 1px 2px 3px black;
+  }
+  .login-container input {
+    width: 250px;
+    height: 35px;
+    margin-top: 35px;
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid blue;
+  }
+  .login-container Button {
+    margin-top: 30px;
+    width: 75%;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .login-container p{
+    margin-top: 10px;
+  }
+  
+  /* signup page */
+  .register-container {
+      width: 350px;
+      height: 470px;
+      box-shadow: 1px 2px 3px black;
+    }
+  
+    .register-container input {
+      width: 200px;
+      height: 35px;
+      margin-top: 30px;
+      border: 0px;
+      outline: 0px;
+      border-bottom: 1px solid blue;
+    }
+    .register-container Button {
+      margin-top: 30px;
+      width: 75%;
+      height: 35px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .register-container p{
+      margin-top: 10px;
+    }
+  
+    .clear-icon,
+    .eye-icon {
+      position: fixed;
+      top:35.5%;
+      right:41%;
+      /* top: 50%;
+      transform: translateY(-50%);
+      color: #aaa;
+      cursor: pointer; */
+    }
