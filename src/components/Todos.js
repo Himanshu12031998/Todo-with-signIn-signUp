@@ -153,7 +153,7 @@ const Todos = () => {
                 <div className="col taskBg">
                   <div className={task.status ? "done" : ""}>
                     <span className="taskNumber">{index + 1}</span>
-                    <span className="taskTask">{task.title}</span>
+                    <span className="taskText">{task.title}</span>
                   </div>
                   <div className="iconsWrap">
                     <span
