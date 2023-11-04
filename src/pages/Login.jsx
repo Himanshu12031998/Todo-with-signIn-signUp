@@ -1,18 +1,17 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import { Container, Form, Button, Alert } from 'react-bootstrap';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import {  Form, Button } from 'react-bootstrap';
 import { NavLink, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FormFloating } from "react-bootstrap";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [isLogin,setIsLogin]=useState(true);
-  const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState('');
+  const [setIsLogin]=useState(true);
+  const [showPassword] = useState(false);
+  const [ setError] = useState('');
 
   const navigate = useNavigate();
 
@@ -41,7 +40,7 @@ const Login = () => {
   const precedLogin = (e) => {
     e.preventDefault();
   
-    // if (validate()) {
+    
       axios("http://localhost:3000/users")
         .then((response) => {
           console.log(response.data);
@@ -61,7 +60,7 @@ const Login = () => {
           toast.error('error')
           
         });
-    // }
+
 
 
   };

@@ -1,21 +1,19 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
 import { FaUser } from "react-icons/fa";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/Main.css";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 
 
 const Header = ({ onToggleSidebar }) => {
- const navigate =useNavigate()
     const handleLogout=()=>{
-      localStorage.clear();
-      
+      localStorage.clear(); 
   }
   
   return (
-    <header className="header">
+    <header className="header" fixed="top">
       <nav className="navbar navbar-dark bg-dark nav-bar">
         <div className="d-flex align-items-center">
           {/* <button className="navbar-toggler" type="button" onClick={onToggleSidebar}>

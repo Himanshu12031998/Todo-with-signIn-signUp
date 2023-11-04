@@ -19,25 +19,28 @@ const Todos = () => {
   const [newTask, setNewTask] = useState("");
   const [updateData, setUpadateData] = useState("");
 
-  // const saveDataToLocalStorage =(data)=>{
-  //   localStorage.setItem('todos',JSON.stringify(data));
-  // }
+  
+  const saveDataToLocalStorage =(data)=>{
+    localStorage.setItem('todos',JSON.stringify(data));
+  }
   useEffect(() => {
-    const storedTodos = JSON.parse(localStorage.getItem("todos")) || [];
+    const storedTodos = JSON.parse(localStorage.getItem('todos')) || [];
     setToDo(storedTodos);
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(toDo));
-  }, [toDo]);
+  // useEffect(() => {
+  //   // localStorage.setItem('todos', JSON.stringify(toDo));
+  //   saveDataToLocalStorage(toDo)
+  // }, [toDo]);
 
   //add task
+
   const addTask = () => {
     if (newTask) {
       let num = toDo.length + 1;
       let newEntry = { id: num, title: newTask, status: false };
       setToDo([...toDo, newEntry]);
-      // saveDataToLocalStorage(toDo)
+      saveDataToLocalStorage(toDo)
       setNewTask("");
     }
   };
