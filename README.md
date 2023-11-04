@@ -1,15 +1,15 @@
 # How to run this project
-step 1 :
-first Go inside the backend folder and run json-server use the below command to run backend.
+Step 1 :
+First Go inside the backend folder and run json-server use the below command to run backend.
 
 **json-server --watch db.json**
 
-step 2 :
-open another terminal and run the below command
+Step 2 :
+Open another terminal and run the below command
 **npm start**
 
-step 3 :
-now register yourself.
+Step 3 :
+Now register yourself.
 
-step 4 :
-login with username and password.
+Step 4 :
+Login with username and password.
