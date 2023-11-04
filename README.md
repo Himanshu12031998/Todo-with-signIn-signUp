@@ -13,3 +13,6 @@ Now register yourself.
 
 Step 4 :
 Login with username and password.
+My Username and Password are:
+**username: arab@123**
+**password: 12341234**
